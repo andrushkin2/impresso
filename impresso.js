@@ -12,7 +12,7 @@ if (Meteor.isClient) {
 if (Meteor.isServer) {
     pages = new Meteor.Collection("pages");
     Meteor.publish("pages", function () {
-        return Rooms.find();
+        return pages.find();
     });
   Meteor.startup(function () {
     // code to run on server at startup

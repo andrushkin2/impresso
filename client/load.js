@@ -1,8 +1,7 @@
 document.addEventListener("DOMContentLoaded", function(){
-    debugger;
     impress().init();
 
-    window.addEventListener("hashchange", function(e){debugger;
+    window.addEventListener("hashchange", function(e){
         var hash = location.hash,
             obj = pages ? pages.findOne("1") : null;
         if (/.*slide\d$/.test(e.oldURL)){
@@ -10,9 +9,13 @@ document.addEventListener("DOMContentLoaded", function(){
                 pages.update("1", {$set: {text: hash}});
             }
         } else {
-            if(!!obj) {
-                location.hash = obj.text;
-            }
+            var interval = setInterval(function(){
+                var obj1 = pages ? pages.findOne("1") : null;
+                if(!!obj1) {
+                    location.hash = obj1.text;
+                    clearInterval(interval);
+                }
+            },5);
         }
     }, false);
 });

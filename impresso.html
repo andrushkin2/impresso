@@ -17,9 +17,22 @@
 
 <template name="impress">
     <div id="impress">
+        {{> logo}}
         {{> bored}}
         {{> slide2}}
         {{> slide3}}
+    </div>
+</template>
+
+<template name="logo">
+    <div id="slide0" class="step" data-x="-10000" data-y="0" data-scale="4" data-rotate-z="50">
+        <h1>impress.js</h1>
+        <h2>
+            <h2>
+                <b class="scaling">like</b>
+            </h2>
+            <h1><b class="rotating">espresso</b></h1>
+        </h2>
     </div>
 </template>
 
@@ -35,8 +48,6 @@
 </template>
 <template name="slide3">
     <div id="slide3" class="step" data-x="0" data-y="0" data-scale="4">
-        <span class="try">then you should try</span>
-        <h1>impress.js<sup>*</sup></h1>
-        <span class="footnote"><sup>*</sup> no rhyme intended</span>
+        <h1>impress.js</h1>
     </div>
 </template>
