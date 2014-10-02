@@ -18,9 +18,12 @@
 <template name="impress">
     <div id="impress">
         {{> logo}}
-        {{> bored}}
+        {{> slide1}}
         {{> slide2}}
         {{> slide3}}
+        {{> slide4}}
+        {{> slide5}}
+        {{> slide6}}
     </div>
 </template>
 
@@ -36,18 +39,62 @@
     </div>
 </template>
 
-<template name="bored">
-    <div id="slide1" class="step slide" data-x="-1000" data-y="-1500">
+<template name="slide1">
+    <div id="slide1" class="step slide" data-x="0" data-y="0">
+        <q>Как все начиналось?</q>
+        <img src="start.jpg">
+    </div>
+</template>
+<template name="slide2">
+    <div id="slide2" class="step slide" data-x="0" data-y="1000">
+        <q><h1>Слайд 1</h1></q>
+    </div>
+</template>
+<template name="slide3">
+    <div id="slide3" class="step slide" data-x="0" data-y="2000">
+        <q><h1>Слайд 2</h1></q>
+    </div>
+</template>
+<template name="slide4">
+    <div id="slide4" class="step slide" data-x="0" data-y="3000">
+        <q class="a"><h1>OP</h1></q>
+        <q class="b"><h2>-OP</h2></q>
+        <q class="c"><h3>-OP!</h3></q>
+        <img src="opa.jpg">
+    </div>
+</template>
+<template name="slide5">
+    <div id="slide5" class="step slide" data-x="0" data-y="4000">
+        <q><h3>Скучновато, да?</h3></q>
+        <img src="1296070207.jpg">
+    </div>
+</template>
+<template name="slide6">
+    <div id="slide6" class="step slide" data-x="0" data-y="4000">
+        <div class="small">&nbsp;</div>
+        <div class="mid">&nbsp;</div>
+        <div class="big">&nbsp;</div>
+        <div class="bigest">
+            <q class="a"><h3>Хватит</h3></q>
+            <q class="b"><h3>это</h3></q>
+            <q class="b"><h3>терпеть!</h3></q>
+        </div>
+
+        <!--<img src="hvatit.jpg">-->
+    </div>
+</template>
+<!--<template name="bored">
+    <div id="slide4" class="step slide" data-x="-1000" data-y="-1500">
         <q>Aren't you just <b>bored</b> with all those slides-based presentations?</q>
     </div>
 </template>
 <template name="slide2">
-    <div id="slide2" class="step slide" data-x="0" data-y="-1500">
+    <div id="slide5" class="step slide" data-x="1000" data-y="-1500">
         <q>Don't you think that presentations given <strong>in modern browsers</strong> shouldn't <strong>copy the limits</strong> of 'classic' slide decks?</q>
     </div>
 </template>
 <template name="slide3">
-    <div id="slide3" class="step" data-x="0" data-y="0" data-scale="4">
+    <div id="slide6" class="step" data-x="2000" data-y="0" data-scale="4">
         <h1>impress.js</h1>
     </div>
-</template>
+</template>-->

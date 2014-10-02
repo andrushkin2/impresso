@@ -1,59 +1,261 @@
-/* CSS declarations go here */
-
-html, body{
-    width: 100%;
-    height: 100%;
-    overflow: hidden;
-    margin: 0px;
-    padding: 0px;
+html,
+body {
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  margin: 0px;
+  padding: 0px;
 }
-
-h1{
-    font-size: 4em;
+h1 {
+  font-size: 4em;
 }
-b{
-    display: inline-block;
-    webkit-transition: 0.5s;
-    -moz-transition: 0.5s;
-    -ms-transition: 0.5s;
-    -o-transition: 0.5s;
-    transition: 0.5s;
+h2 {
+  font-size: 3em;
 }
-
-.present .scaling{
-
-
-    -webkit-transform: scale(0.7);
-    -moz-transform:    scale(0.7);
-    -ms-transform:     scale(0.7);
-    -o-transform:      scale(0.7);
-    transform:         scale(0.7);
-
-    -webkit-transition-delay: 0.5s;
-    -moz-transition-delay:    0.5s;
-    -ms-transition-delay:     0.5s;
-    -o-transition-delay:      0.5s;
-    transition-delay:         0.5s;
+h3 {
+  font-size: 2em;
 }
-
+b {
+  display: inline-block;
+  webkit-transition: 0.5s;
+  -moz-transition: 0.5s;
+  -ms-transition: 0.5s;
+  -o-transition: 0.5s;
+  transition: 0.5s;
+}
+.present .scaling {
+  -webkit-transform: scale(0.7);
+  -moz-transform: scale(0.7);
+  -ms-transform: scale(0.7);
+  -o-transform: scale(0.7);
+  transform: scale(0.7);
+  -webkit-transition-delay: 0.5s;
+  -moz-transition-delay: 0.5s;
+  -ms-transition-delay: 0.5s;
+  -o-transition-delay: 0.5s;
+  transition-delay: 0.5s;
+}
 .present .rotating {
-    -webkit-transform: rotate(-10deg);
-    -moz-transform:    rotate(-10deg);
-    -ms-transform:     rotate(-10deg);
-    -o-transform:      rotate(-10deg);
-    transform:         rotate(-10deg);
-
-    -webkit-transition-delay: 0.25s;
-    -moz-transition-delay:    0.25s;
-    -ms-transition-delay:     0.25s;
-    -o-transition-delay:      0.25s;
-    transition-delay:         0.25s;
+  -webkit-transform: rotate(-10deg);
+  -moz-transform: rotate(-10deg);
+  -ms-transform: rotate(-10deg);
+  -o-transform: rotate(-10deg);
+  transform: rotate(-10deg);
+  -webkit-transition-delay: 0.25s;
+  -moz-transition-delay: 0.25s;
+  -ms-transition-delay: 0.25s;
+  -o-transition-delay: 0.25s;
+  transition-delay: 0.25s;
 }
-
 .present .positioning {
-    -webkit-transform: translateY(-10px);
-    -moz-transform:    translateY(-10px);
-    -ms-transform:     translateY(-10px);
-    -o-transform:      translateY(-10px);
-    transform:         translateY(-10px);
+  -webkit-transform: translateY(-10px);
+  -moz-transform: translateY(-10px);
+  -ms-transform: translateY(-10px);
+  -o-transform: translateY(-10px);
+  transform: translateY(-10px);
+}
+.slide {
+  text-align: center;
+}
+.slide img {
+  width: 423px;
+}
+#slide1 {
+  text-align: center;
+}
+#slide4 q,
+#slide4 img {
+  opacity: 0;
+  display: inline-block;
+  webkit-transition: 0.5s;
+  -moz-transition: 0.5s;
+  -ms-transition: 0.5s;
+  -o-transition: 0.5s;
+  transition: 0.5s;
+}
+#slide4 img {
+  -webkit-transform: translateY(100px);
+  -moz-transform: translateY(100px);
+  -ms-transform: translateY(100px);
+  -o-transform: translateY(100px);
+  transform: translateY(100px);
+}
+#slide4.present q.a {
+  opacity: 1;
+  -webkit-transition-delay: 0.25s;
+  -moz-transition-delay: 0.25s;
+  -ms-transition-delay: 0.25s;
+  -o-transition-delay: 0.25s;
+  transition-delay: 0.25s;
+}
+#slide4.present q.b {
+  opacity: 1;
+  -webkit-transition-delay: 0.75s;
+  -moz-transition-delay: 0.75s;
+  -ms-transition-delay: 0.75s;
+  -o-transition-delay: 0.75s;
+  transition-delay: 0.75s;
+}
+#slide4.present q.c {
+  opacity: 1;
+  -webkit-transition-delay: 1.25s;
+  -moz-transition-delay: 1.25s;
+  -ms-transition-delay: 1.25s;
+  -o-transition-delay: 1.25s;
+  transition-delay: 1.25s;
+}
+#slide4.present img {
+  opacity: 1;
+  width: 790px;
+  -webkit-transform: translateY(0px);
+  -moz-transform: translateY(0px);
+  -ms-transform: translateY(0px);
+  -o-transform: translateY(0px);
+  transform: translateY(0px);
+  -webkit-transition-delay: 2.5s;
+  -moz-transition-delay: 2.5s;
+  -ms-transition-delay: 2.5s;
+  -o-transition-delay: 2.5s;
+  transition-delay: 2.5s;
+}
+#slide5 {
+  opacity: 0;
+}
+#slide5.present {
+  opacity: 1;
+}
+#slide5 img {
+  width: 650px;
+  margin-top: 15px;
+}
+#slide6 {
+  opacity: 0;
+  background: url("hvatit.jpg");
+  background-size: cover;
+}
+#slide6 .small {
+  opacity: 0;
+  webkit-transition: 0.5;
+  -moz-transition: 0.5;
+  -ms-transition: 0.5;
+  -o-transition: 0.5;
+  transition: 0.5;
+  -webkit-box-shadow: 0px 2px 11px 1px #695d5d;
+  -moz-box-shadow: 0px 2px 11px 1px #695d5d;
+  box-shadow: 0px 2px 11px 1px #695d5d;
+  -webkit-transition-delay: 5s;
+  -moz-transition-delay: 5s;
+  -ms-transition-delay: 5s;
+  -o-transition-delay: 5s;
+  transition-delay: 5s;
+  position: absolute;
+  background: white;
+  border: 1px solid #949191;
+  left: 523px;
+  top: 230px;
+  width: 15px;
+  height: 15px;
+  -webkit-border-radius: 15px;
+  -moz-border-radius: 15px;
+  border-radius: 15px;
+}
+#slide6 .mid {
+  opacity: 0;
+  webkit-transition: 0.5;
+  -moz-transition: 0.5;
+  -ms-transition: 0.5;
+  -o-transition: 0.5;
+  transition: 0.5;
+  -webkit-box-shadow: 0px 2px 11px 1px #695d5d;
+  -moz-box-shadow: 0px 2px 11px 1px #695d5d;
+  box-shadow: 0px 2px 11px 1px #695d5d;
+  position: absolute;
+  background: white;
+  border: 1px solid #949191;
+  left: 551px;
+  top: 250px;
+  width: 30px;
+  height: 30px;
+  -webkit-border-radius: 30px;
+  -moz-border-radius: 30px;
+  border-radius: 30px;
+}
+#slide6 .big {
+  opacity: 0;
+  webkit-transition: 0.5;
+  -moz-transition: 0.5;
+  -ms-transition: 0.5;
+  -o-transition: 0.5;
+  transition: 0.5;
+  -webkit-box-shadow: 0px 2px 11px 1px #695d5d;
+  -moz-box-shadow: 0px 2px 11px 1px #695d5d;
+  box-shadow: 0px 2px 11px 1px #695d5d;
+  position: absolute;
+  background: white;
+  border: 1px solid #949191;
+  left: 587px;
+  top: 283px;
+  width: 50px;
+  height: 50px;
+  -webkit-border-radius: 50px;
+  -moz-border-radius: 50px;
+  border-radius: 50px;
+}
+#slide6 .bigest {
+  opacity: 0;
+  webkit-transition: 0.5;
+  -moz-transition: 0.5;
+  -ms-transition: 0.5;
+  -o-transition: 0.5;
+  transition: 0.5;
+  -webkit-box-shadow: 0px 2px 11px 1px #695d5d;
+  -moz-box-shadow: 0px 2px 11px 1px #695d5d;
+  box-shadow: 0px 2px 11px 1px #695d5d;
+  position: absolute;
+  background: white;
+  border: 1px solid #949191;
+  left: 679px;
+  top: -127px;
+  width: 10px;
+  height: 10px;
+  -webkit-border-radius: 50px;
+  -moz-border-radius: 50px;
+  border-radius: 50px;
+}
+#slide6.present {
+  opacity: 1;
+}
+#slide6.present .small {
+  opacity: 1;
+  -webkit-transition-delay: 1s;
+  -moz-transition-delay: 1s;
+  -ms-transition-delay: 1s;
+  -o-transition-delay: 1s;
+  transition-delay: 1s;
+}
+#slide6.present .mid {
+  opacity: 1;
+  -webkit-transition-delay: 1.5s;
+  -moz-transition-delay: 1.5s;
+  -ms-transition-delay: 1.5s;
+  -o-transition-delay: 1.5s;
+  transition-delay: 1.5s;
+}
+#slide6.present .big {
+  opacity: 1;
+  -webkit-transition-delay: 2s;
+  -moz-transition-delay: 2s;
+  -ms-transition-delay: 2s;
+  -o-transition-delay: 2s;
+  transition-delay: 2s;
+}
+#slide6.present .bigest {
+  opacity: 1;
+  width: 403px;
+  height: 600px;
+  -webkit-transition-delay: 2.5s;
+  -moz-transition-delay: 2.5s;
+  -ms-transition-delay: 2.5s;
+  -o-transition-delay: 2.5s;
+  transition-delay: 2.5s;
 }
