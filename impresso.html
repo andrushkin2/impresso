@@ -17,25 +17,24 @@
 
 <template name="impress">
     <div id="impress">
-        {{> logo}}
         {{> slide1}}
         {{> slide2}}
         {{> slide3}}
         {{> slide4}}
         {{> slide5}}
         {{> slide6}}
-    </div>
-</template>
-
-<template name="logo">
-    <div id="slide0" class="step" data-x="-10000" data-y="0" data-scale="4" data-rotate-z="50">
-        <h1>impress.js</h1>
-        <h2>
-            <h2>
-                <b class="scaling">like</b>
-            </h2>
-            <h1><b class="rotating">espresso</b></h1>
-        </h2>
+        {{> slide7}}
+        {{> slide8}}
+        {{> slide9}}
+        {{> slide10}}
+        {{> slide11}}
+        {{> slide12}}
+        {{> slide13}}
+        {{> slide14}}
+        {{> slide15}}
+        {{> slide16}}
+        {{> slide17}}
+        {{> slide18}}
     </div>
 </template>
 
@@ -83,18 +82,83 @@
         <!--<img src="hvatit.jpg">-->
     </div>
 </template>
-<!--<template name="bored">
-    <div id="slide4" class="step slide" data-x="-1000" data-y="-1500">
-        <q>Aren't you just <b>bored</b> with all those slides-based presentations?</q>
+<template name="slide7">
+    <div id="slide7" class="step" data-x="0" data-y="4000" data-rotate-y="90">
+        <img class="js" src="js.png"><b>+</b>
+        <img src="css3.png">
     </div>
 </template>
-<template name="slide2">
-    <div id="slide5" class="step slide" data-x="1000" data-y="-1500">
-        <q>Don't you think that presentations given <strong>in modern browsers</strong> shouldn't <strong>copy the limits</strong> of 'classic' slide decks?</q>
+<template name="slide8">
+    <div id="slide8" class="step" data-x="0" data-y="2000" data-scale="15" data-rotate-z="50">
+        <h1 class="impre">impress</h1><h1 class="dot">.</h1><h1 class="js">js</h1>
     </div>
 </template>
-<template name="slide3">
-    <div id="slide6" class="step" data-x="2000" data-y="0" data-scale="4">
-        <h1>impress.js</h1>
+<template name="slide9">
+    <div id="slide9" class="step needHide" data-x="3000" data-y="0">
+        <h3>Основы основ</h3>
     </div>
-</template>-->
+</template>
+<template name="slide10">
+    <div id="slide10" class="step needHide" data-x="3500" data-y="0" data-rotate-y="90">
+        <h5>Фреймворк работает с последовательностью слайдов, каждый слайд в терминологии фреймворка - шаг (<b>step</b>)</h5>
+    </div>
+</template>
+<template name="slide11">
+    <div id="slide11" class="step needHide" data-x="3500" data-y="0" data-rotate-x="90">
+        <h5>Каждый слайд определяется с помощью обычных средств <b>HTML</b> и <b>CSS</b></h5>
+    </div>
+</template>
+<template name="slide12">
+    <div id="slide12" class="step needHide" data-x="3500" data-y="0" data-rotate-y="90">
+        <h5>Все слайды размещаются в неком <b>трехмерном</b> &nbsp;пространстве</h5>
+        <img src="3d.png">
+    </div>
+</template>
+<template name="slide13">
+    <div id="slide13" class="step needHide" data-x="-3000" data-y="1000" data-scale="7" data-rotate-y="45">
+        <h5>Возможны специальные&nbsp; <b>обзорные слайды</b>&nbsp;&nbsp;. В зависимости от своего&nbsp; <b>положения</b>&nbsp;, &nbsp;<b>ориентации в пространстве</b>&nbsp; и &nbsp;<b>масштаба</b>&nbsp;, отображают все доступные для обзора обычные слайды</h5>
+    </div>
+</template>
+<template name="slide14">
+    <div id="slide14" class="step needHide" data-x="3500" data-y="0" data-rotate-x="180">
+        <h5>Для каждого слайда:</h5>
+        <h6>1)&nbsp; <b>координаты</b>&nbsp; (x, y, z) точки соответствующей центру слайда</h6>
+        <h6>2)&nbsp; <b>наклон (поворот)</b>&nbsp; слайда вокруг осей X, Y, и Z</h6>
+        <h6>3)&nbsp; <b>масштаб</b></h6>
+    </div>
+</template>
+<template name="slide15">
+    <div id="slide15" class="step needHide" data-x="5000" data-y="2000" data-scale="15" data-rotate-z="50">
+        <q><h3>С основами все</h3></q>
+        <img src="slava.jpg">
+    </div>
+</template>
+<template name="slide16">
+    <div id="slide16" class="step needHide" data-x="5000" data-y="2000" data-scale="10" data-rotate-z="50">
+        <q><h3>С чего начать?</h3></q>
+        <img src="nachat.jpg">
+    </div>
+</template>
+<template name="slide17">
+    <div id="slide17" class="step needHide" data-x="5000" data-y="2000" data-scale="8" data-rotate-z="50">
+        <q><h3>
+            <b class="a">У</b>
+            <b class="b">с</b>
+            <b class="c">т</b>
+            <b class="d">а</b>
+            <b class="e">н</b>
+            <b class="f">о</b>
+            <b class="g">в</b>
+            <b class="h">к</b>
+            <b class="i">а</b>
+        </h3></q>
+        <h5><b class="link">https://github.com/bartaz/impress.js</b></h5>
+    </div>
+</template>
+<template name="slide18">
+    <div id="slide18" class="step needHide" data-x="7000" data-y="2000" data-scale="8" data-rotate-y="90">
+        <q><h3>Чего есть внутри?</h3></q>
+        <img src="folder.png">
+    </div>
+</template>
+

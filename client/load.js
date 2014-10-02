@@ -4,7 +4,7 @@ document.addEventListener("DOMContentLoaded", function(){
     window.addEventListener("hashchange", function(e){
         var hash = location.hash,
             obj = pages ? pages.findOne("1") : null;
-        if (/.*slide\d$/.test(e.oldURL)){
+        if (/.*slide\d\d?$/.test(e.oldURL)){
             if (!obj || obj.text !== hash){
                 pages.update("1", {$set: {text: hash}});
             }
