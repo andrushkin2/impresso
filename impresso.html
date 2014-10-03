@@ -35,6 +35,22 @@
         {{> slide16}}
         {{> slide17}}
         {{> slide18}}
+        {{> slide19}}
+        {{> slide20}}
+        {{> slide21}}
+        {{> slide22}}
+        {{> slide23}}
+        {{> slide24}}
+        {{> slide25}}
+        {{> slide26}}
+        {{> slide27}}
+        {{> slide28}}
+        {{> slide29}}
+        {{> slide30}}
+        {{> slide31}}
+        {{> slide32}}
+        {{> slide33}}
+        {{> slide34}}
     </div>
 </template>
 
@@ -161,4 +177,132 @@
         <img src="folder.png">
     </div>
 </template>
+<template name="slide19">
+    <div id="slide19" class="step needHide" data-x="7000" data-y="2000" data-scale="4">
+        <q><h3>Инициплизация:</h3></q>
+        <h5 class="code">&lt;script&gt;impress().init();&lt;/script&gt;</h5>
+    </div>
+</template>
+<template name="slide20">
+    <div id="slide20" class="step needHide" data-x="7000" data-y="2000" data-scale="4">
+        <q><h3>Размещение слайдов:</h3></q>
+        <h6 class="code left">
+            &lt;div id="impress"&gt;<br>
+            &lt;!-здесь все слайды презентации-&gt;<br>
+            &lt;/div&gt;
+        </h6>
+    </div>
+</template>
 
+<template name="slide21">
+    <div id="slide21" class="step slide" data-x="6000" data-y="0">
+        <q>Шаг первый:</q>
+        <h6 class="code left">
+            &lt;div class="step"&gt;<br>
+            &nbsp;&nbsp;&nbsp;&lt;h1>Первый шаг - без атрибутов:&lt;/h1&gt;<br>
+            &lt;/div&gt;
+        </h6>
+        <q>Шаг второй:</q>
+        <h6 class="code left">
+            &lt;div class="step" data-x="1000" data-y="1000"&gt;<br>
+            &nbsp;&nbsp;&nbsp;&lt;h1&gt;Второй шаг - трансляция:&lt;/h1&gt;<br>
+            &lt;/div&gt;
+        </h6>
+    </div>
+</template>
+<template name="slide22">
+    <div id="slide22" class="step slide" data-x="7000" data-y="1000">
+        <q>Шаг третий:</q>
+        <h6 class="code left">
+            &lt;div class="step" data-x="3000" data-y="-1000" data-scale="4"&gt;<br>
+            &nbsp;&nbsp;&nbsp;&lt;h1&gt;Третий шаг - масштаб:&lt;/h1&gt;<br>
+            &lt;/div&gt;
+        </h6>
+    </div>
+</template>
+<template name="slide23">
+    <div id="slide23" class="step slide" data-x="9000" data-y="-1000" data-scale="4">
+        <q>Шаг четвертый:</q>
+        <h6 class="code left">
+            &lt;div class="step" data-x="-1700" data-y="-3000" data-rotate="180" data-scale="40"&gt;<br>
+            &nbsp;&nbsp;&nbsp;&lt;h1&gt;Четвертый шаг - поворот:&lt;/h1&gt;<br>
+            &lt;/div&gt;
+        </h6>
+    </div>
+</template>
+<template name="slide24">
+    <div id="slide24" class="step slide needHide" data-x="4300" data-y="-3000" data-rotate="180"  data-scale="40">
+        <q>Пятый шаг:</q>
+        <h6 class="code left">
+            &lt;div class="step" data-x="8000" data-y="-8100" data-rotate-x="30" data-rotate-z="-29"&gt;<br>
+            &nbsp;&nbsp;&nbsp;&lt;h1&gt;Пятый шаг - 3D:&lt;/h1&gt;<br>
+            &lt;/div&gt;
+        </h6>
+    </div>
+</template>
+<template name="slide25">
+    <div id="slide25" class="step slide needHide" data-x="14000" data-y="-8100" data-rotate-x="30" data-rotate-z="-29">
+        <q>Шестой шаг:</q>
+        <h6 class="code left">
+            &lt;div class="step" data-x="0" data-y="0" data-scale="40"&gt;<br>
+            &nbsp;&nbsp;&nbsp;&lt;h1&gt;Шестой шаг - общий вид:&lt;/h1&gt;<br>
+            &lt;/div&gt;
+        </h6>
+    </div>
+</template>
+<template name="slide26">
+    <div id="slide26" class="step needHide" data-x="6000" data-y="0" data-scale="10">
+    </div>
+</template>
+<template name="slide27">
+    <div id="slide27" class="step needHide" data-x="3000" data-y="5000" data-scale="10">
+        <q>Авторские работы</q>
+    </div>
+</template>
+<template name="slide28">
+    <div id="slide28" class="step needHide" data-x="3000" data-y="5000" data-scale="10" data-rotate-x="45">
+        <q><h3><b>Dyapos</b></h3></q>
+        <q><h3>Graphic web editor for Impress.js, inspired on Prezi</h3></q>
+        <h6 class="code center">http://www.dyapos.net/</h6>
+    </div>
+</template>
+<template name="slide29">
+    <div id="slide29" class="step needHide" data-x="3000" data-y="5000" data-scale="10" data-rotate-x="90">
+        <q><h3><b>Strut</b></h3></q>
+        <q><h3>Clean extendable code base, fully client-side</h3></q>
+        <h6 class="code center">http://strut.io/</h6>
+    </div>
+</template>
+<template name="slide30">
+    <div id="slide30" class="step needHide" data-x="3000" data-y="5000" data-scale="10" data-rotate-x="135">
+        <q><h3><b>impress.js S9 Template Pack</b></h3></q>
+        <q><h5>Lets you write your impress.js slides in Markdown or Textile. Uses the Slide Show (S9) Ruby gem to generate your deck</h5></q>
+        <h6 class="code center">http://slideshow-s9.github.io/slideshow-impress.js/</h6>
+    </div>
+</template>
+<template name="slide31">
+    <div id="slide31" class="step needHide" data-x="3000" data-y="5000" data-scale="10">
+        <q>Плагины</q>
+    </div>
+</template>
+<template name="slide32">
+    <div id="slide32" class="step needHide" data-x="3000" data-y="5000" data-scale="10" data-rotate-x="180">
+        <q><h4><b>impress-audio.js</b></h4></q>
+        <q><h5>Small addition to impress.js to allow for html5 audio in your presentation</h5></q>
+        <h6 class="code center">https://github.com/danielsimons1/impress-audio</h6>
+    </div>
+</template>
+<template name="slide33">
+    <div id="slide33" class="step needHide" data-x="3000" data-y="5000" data-scale="10" data-rotate-x="180" data-rotate-y="45">
+        <q><h4><b>impress.js-progress</b></h4></q>
+        <q><h5>A small addition to impress.js which allows you to have a progressbar and/or the current step number and total steps</h5></q>
+        <h6 class="code center">https://github.com/m42e/impress.js-progress</h6>
+    </div>
+</template>
+<template name="slide34">
+    <div id="slide34" class="step needHide" data-x="3000" data-y="5000" data-scale="10" data-rotate-x="180" data-rotate-y="90">
+        <q><h4><b>impress-console</b></h4></q>
+        <q><h5>A speaker console with notes, preview and timers for impress.js</h5></q>
+        <h6 class="code center">https://github.com/regebro/impress-console</h6>
+    </div>
+</template>

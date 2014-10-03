@@ -305,6 +305,17 @@ b{
 }
 .step{
   text-align: center;
+  .code{
+    background: #f7f7f9;
+    .border(5px);
+    .boxShadow(0px 0px 19px 0px rgb(119, 113, 113));
+    &.left{
+      text-align: left;
+    }
+    &.center{
+      text-align: center;
+    }
+  }
 }
 
 #slide14{
@@ -365,6 +376,18 @@ b{
   }
 }
 
+#slide19{
+  h5{
+
+  }
+}
+
+
+#slide32, #slide33, #slide34{
+  .code{
+    font-size: 0.7em;
+  }
+}
 .transform(@a){
   -webkit-transform: @a;
   -moz-transform:    @a;
