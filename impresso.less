@@ -195,8 +195,8 @@ b{
     position: absolute;
     background: white;
     border: 1px solid rgb(148, 145, 145);
-    left: 679px;
-    top: -127px;
+    left: 716px;
+    top: -81px;
     width: 10px;
     height: 10px;
     .border(50px);
@@ -235,9 +235,10 @@ b{
   }
   b{
     top: 159px;
-    left: 409px;
+    left: 440px;
     font-size: 114px;
     position: absolute;
+    text-shadow: 1px 2px 24px blue;
   }
   img{
     .transform(scale(0.9));
@@ -252,7 +253,7 @@ b{
   }
 }
 
-#slide8{
+#slide8, #slide37{
   visibility: hidden;
   &.present{
     visibility: visible;
@@ -414,6 +415,7 @@ b{
 
 .boxShadow(@a){
   -webkit-box-shadow: @a;
+
   -moz-box-shadow:    @a;
   box-shadow:         @a;
 }
