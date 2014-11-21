@@ -25,6 +25,7 @@
         {{> slide6}}
         {{> slide7}}
         {{> slide8}}
+        {{> slide8_1}}
         {{> slide9}}
         {{> slide10}}
         {{> slide11}}
@@ -50,7 +51,6 @@
         {{> slide31}}
         {{> slide32}}
         {{> slide33}}
-        {{> slide34}}
         {{> slide35}}
         {{> slide36}}
         {{> slide37}}
@@ -58,6 +58,9 @@
 </template>
 
 <template name="slide1">
+    <div id="slide0" class="step" data-x="-3000" data-y="0">
+        <q>Презентация в браузере за 10 минут - миф или реальность</q>
+    </div>
     <div id="slide1" class="step slide" data-x="0" data-y="0">
         <q>Как все начиналось?</q>
         <img src="start.jpg">
@@ -110,6 +113,14 @@
 <template name="slide8">
     <div id="slide8" class="step" data-x="0" data-y="2000" data-scale="15" data-rotate-z="50">
         <h1 class="impre">impress</h1><h1 class="dot">.</h1><h1 class="js">js</h1>
+    </div>
+</template>
+<template name="slide8_1">
+    <div id="slide81" class="step needHide" data-x="0" data-y="2000" data-scale="10" data-rotate-z="70">
+        <q>Статистика Github</q>
+        <br>
+        <q>2 строчка среди проектов по количеству звездочек с одним автором</q>
+        <img src="./second.png"/>
     </div>
 </template>
 <template name="slide9">
@@ -207,14 +218,14 @@
         <br>
         <br>
         <h6 class="code left">
-            &lt;div class="step slide"&gt;<br>
+            &lt;div id="1" class="step slide"&gt;<br>
             &nbsp;&nbsp;&nbsp;&lt;h1>Первый шаг - без атрибутов&lt;/h1&gt;<br>
             &lt;/div&gt;
         </h6>
         <br>
         <br>
         <h6 class="code left second">
-            &lt;div class="step slide" data-x="1000" data-y="1000"&gt;<br>
+            &lt;div id="2" class="step slide" data-x="1000" data-y="1000"&gt;<br>
             &nbsp;&nbsp;&nbsp;&lt;h1&gt;Второй шаг - трансляция&lt;/h1&gt;<br>
             &lt;/div&gt;
         </h6>
@@ -226,7 +237,7 @@
         <br>
         <br>
         <h6 class="code left">
-            &lt;div class="step slide" data-x="3000" data-y="-1000" data-scale="4"&gt;<br>
+            &lt;div id="3" class="step slide" data-x="3000" data-y="-1000" data-scale="4"&gt;<br>
             &nbsp;&nbsp;&nbsp;&lt;h1&gt;Третий шаг - масштаб&lt;/h1&gt;<br>
             &lt;/div&gt;
         </h6>
@@ -238,7 +249,7 @@
         <br>
         <br>
         <h6 class="code left">
-            &lt;div class="step slide" data-x="-1700" data-y="-3000" data-rotate="180" data-scale="40"&gt;<br>
+            &lt;div id="4" class="step slide" data-x="-1700" data-y="-3000" data-rotate="180" data-scale="40"&gt;<br>
             &nbsp;&nbsp;&nbsp;&lt;h1&gt;Четвертый шаг - поворот&lt;/h1&gt;<br>
             &lt;/div&gt;
         </h6>
@@ -250,19 +261,19 @@
         <br>
         <br>
         <h6 class="code left">
-            &lt;div class="step" data-x="8000" data-y="-8100" data-rotate-x="30" data-rotate-z="-29"&gt;<br>
-            &nbsp;&nbsp;&nbsp;&lt;h1&gt;Пятый шаг - 3D&lt;/h1&gt;<br>
+            &lt;div id="5" class="step" data-x="8000" data-y="-8100" data-rotate-x="30" data-rotate-z="-29"&gt;<br>
+            &nbsp;&nbsp;&nbsp;&lt;h1&gt;Пятый шаг&lt;/h1&gt;<br>
             &lt;/div&gt;
         </h6>
     </div>
 </template>
 <template name="slide25">
     <div id="slide25" class="step slide needHide" data-x="14000" data-y="-8100" data-rotate-x="30" data-rotate-z="-29">
-        <q>Пятый шаг - 3D</q>
+        <q>Пятый шаг</q>
         <br>
         <br>
         <h6 class="code left">
-            &lt;div class="step" data-x="0" data-y="0" data-scale="40"&gt;<br>
+            &lt;div id="6" class="step" data-x="0" data-y="0" data-scale="40"&gt;<br>
             &nbsp;&nbsp;&nbsp;&lt;h1&gt;Шестой шаг - общий вид&lt;/h1&gt;<br>
             &lt;/div&gt;
         </h6>
@@ -280,22 +291,25 @@
 </template>
 <template name="slide28">
     <div id="slide28" class="step needHide" data-x="3000" data-y="5000" data-scale="10" data-rotate-x="45">
-        <q><h3><b>Dyapos</b></h3></q>
-        <q><h3>Graphic web editor for Impress.js, inspired on Prezi</h3></q>
+        <img src="./dyapos.png"/>
+        <q><h3>Graphic web editor for Impress.js</h3></q>
         <h6 class="code center">http://www.dyapos.net/</h6>
     </div>
 </template>
 <template name="slide29">
-    <div id="slide29" class="step needHide" data-x="3000" data-y="5000" data-scale="10" data-rotate-x="90">
-        <q><h3><b>Strut</b></h3></q>
-        <q><h3>Clean extendable code base, fully client-side</h3></q>
+    <div id="slide29" class="step needHide" data-x="3000" data-y="5000" data-scale="10" data-rotate-x="92">
+        <img src="./strut.png"/>
+        <br>
         <h6 class="code center">http://strut.io/</h6>
     </div>
 </template>
 <template name="slide30">
     <div id="slide30" class="step needHide" data-x="3000" data-y="5000" data-scale="10" data-rotate-x="135">
-        <q><h3><b>impress.js S9 Template Pack</b></h3></q>
-        <q><h5>Lets you write your impress.js slides in Markdown or Textile. Uses the Slide Show (S9) Ruby gem to generate your deck</h5></q>
+        <q><h3><b>impress.js S9</b></h3></q>
+        <q><h4><b>Template Pack</b></h4></q>
+        <q>Ruby gem</q>
+        <br>
+        <q><h5>Пишем слайды используя Markdown или Textile</h5></q>
         <h6 class="code center">http://slideshow-s9.github.io/slideshow-impress.js/</h6>
     </div>
 </template>
@@ -307,41 +321,79 @@
 <template name="slide32">
     <div id="slide32" class="step needHide" data-x="3000" data-y="5000" data-scale="10" data-rotate-x="180">
         <q><h4><b>impress-audio.js</b></h4></q>
-        <q><h5>Small addition to impress.js to allow for html5 audio in your presentation</h5></q>
+        <q><h5>Куда же без музыки в презентации :)</h5></q>
         <h6 class="code center">https://github.com/danielsimons1/impress-audio</h6>
     </div>
 </template>
 <template name="slide33">
     <div id="slide33" class="step needHide" data-x="3000" data-y="5000" data-scale="10" data-rotate-x="180" data-rotate-y="45">
         <q><h4><b>impress.js-progress</b></h4></q>
-        <q><h5>A small addition to impress.js which allows you to have a progressbar and/or the current step number and total steps</h5></q>
+        <q><h5>Progress-bar для Вашей презентации</h5></q>
         <h6 class="code center">https://github.com/m42e/impress.js-progress</h6>
-    </div>
-</template>
-<template name="slide34">
-    <div id="slide34" class="step needHide" data-x="3000" data-y="5000" data-scale="10" data-rotate-x="180" data-rotate-y="90">
-        <q><h4><b>impress-console</b></h4></q>
-        <q><h5>A speaker console with notes, preview and timers for impress.js</h5></q>
-        <h6 class="code center">https://github.com/regebro/impress-console</h6>
     </div>
 </template>
 <template name="slide35">
     <div id="slide35" class="step needHide" data-x="3000" data-y="5000" data-scale="20" data-rotate-y="45" data-rotate-z="90">
         <q><h4><b>Минусы:</b></h4></q>
-        <q><h6>Не предусмотрены предустановленные темы для дизайна презентаций</h6></q>
-        <q><h6><b>IE</b> как всегда на высоте</h6></q>
-        <img src="ie.png">
-        <br>
+        <img src="1296070207.jpg">
+    </div>
+    <div id="slide351" class="step needHide" data-x="3000" data-y="5000" data-scale="20" data-rotate-y="60" data-rotate-z="100">
+        <q><h6>Отсутствуют предустановленные темы для дизайна презентаций</h6></q>
+    </div>
+    <div id="slide352" class="step needHide" data-x="3000" data-y="5000" data-scale="20" data-rotate-y="70" data-rotate-z="110">
         <q><h6>Проблемы в отображении на touch-устройствах</h6></q>
     </div>
+    <div id="slide353" class="step needHide" data-x="3000" data-y="5000" data-scale="20" data-rotate-y="80" data-rotate-z="120">
+        <q><h6>Нет событий для каждого отдельного слайда</h6></q>
+    </div>
+    <div id="slide354" class="step needHide" data-x="3000" data-y="5000" data-scale="20" data-rotate-y="90" data-rotate-z="140">
+        <q><h6>Много нужно писть ручками</h6></q>
+        <img src="./programmer.jpg">
+    </div>
+    <div id="slide355" class="step needHide" data-x="3000" data-y="5000" data-scale="20" data-rotate-y="100" data-rotate-z="160">
+        <q><h6>IE как всегда на высоте</h6></q>
+        <img src="./ie.png">
+    </div>
+    <div id="slide356" class="step needHide" data-x="3000" data-y="5000" data-scale="20" data-rotate-y="100" data-rotate-z="160">
+        <q><h6>Не самая лучшая документация</h6></q>
+    </div>
+    <div id="slide357" class="step needHide" data-x="3000" data-y="5000" data-scale="20" data-rotate-y="45" data-rotate-z="90">
+        <q><h4><b>Плюсы:</b></h4></q>
+        <img src="./cat.jpeg">
+    </div>
+    <div id="slide358" class="step needHide" data-x="3000" data-y="5000" data-scale="20" data-rotate-y="60" data-rotate-z="70">
+        <q><h6>Плагины упрощают жизнь</h6></q>
+    </div>
+    <div id="slide359" class="step needHide" data-x="3000" data-y="5000" data-scale="20" data-rotate-y="40" data-rotate-z="50">
+        <q><h6>Есть возможно расширения библиотеки</h6></q>
+    </div>
+    <div id="slide360" class="step needHide" data-x="3000" data-y="5000" data-scale="20" data-rotate-y="40" data-rotate-z="50">
+        <q><h6>Кроссбраузерность:</h6></q>
+        <br>
+        <q>Chrome/Chromium, Safari, Firefox, IE 11</q>
+    </div>
+
 </template>
 <template name="slide36">
     <div id="slide36" class="step needHide" data-x="3000" data-y="5000" data-scale="20" data-rotate-y="45" data-rotate-z="180">
-        <q><h1><b>Any questions?</b></h1></q>
+        <q><h2><b>Any questions?</b></h2></q>
     </div>
 </template>
 <template name="slide37">
     <div id="slide37" class="step" data-x="0" data-y="2000" data-scale="15" data-rotate-z="50">
         <h1 class="impre">impress</h1><h1 class="dot">.</h1><h1 class="js">js</h1>
+    </div>
+    <div id="slide38" class="step needHide" data-x="0" data-y="2000" data-scale="30" data-rotate-z="240">
+        <h3>Андрей Козяков</h3>
+        <div style="text-align: left; position: relative; left: 220px">
+            <div>
+                <img src="./fb.png" style="height: 120px;width: 120px;">
+                <span style="position:relative; top:-45px;">&nbsp;/kosiakoff</span>
+            </div>
+            <div>
+                <img src="./twitter.png" style="height: 120px;width: 120px;">
+                <span style="position:relative; top:-40px;">&nbsp;/kosiak_man</span>
+            </div>
+        </div>
     </div>
 </template>
